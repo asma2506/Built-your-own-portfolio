@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Personal Portfolio Website</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+<div class="container">
+<nav>
+<ul id="sidemenu">
+<li><a href="#header">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#achivements">Achivements</a></li>
+<li><a href="#portfolio">Portfolio</a></li>
+<li><a href="#contact">Contact</a></li>
+<i class="fas fa-times" onclick="closemenu()"></i>
+</ul>
+<i class="fas fa-bars" onclick="openmenu()"></i>
+</nav>
+<div class="header-text">
+<p>Welcome to my portfolio</p>
+<h1>Hi, I'm <span>Asma</span><br> From Chennai</h1>
+</div>
+</div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+<div class="container">
+<div class="row">
+<div class="about-col-1">
+<img src=asma.jpg>
+</div>
+<div class="about-col-2">
+<h1 class="sub-title">About Me</h1>
+<p>I am  Asma from third-year Information Technology student at MSAJCE, with a strong passion for technology and problem-solving. Currently gaining practical experience through an internship at Tech Solutions, I’m focused on improving my skills in coding, software development, web development and IT systems. I am dedicated to learning and staying up-to-date with the latest advancements in technology, eager to contribute to impactful projects.
+    My goal is to develop innovative solutions that drive technological advancements. I am constantly working on personal growth, both academically and professionally. Staying updated with the latest trends in IT is a priority for me. I am excited about the future and ready to make a positive impact in the tech world.
+
+</p>
+<div class="tab-titles">
+<p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+<p class="tab-links" onclick="opentab('experience')">Experience</p>
+<p class="tab-links" onclick="opentab('education')">Education</p>
+</div>
+<div class="tab-contents active-tab" id="skills">
+<ul>
+<li><span>Programing skills</span><br>basics of python ,c,java</li>
+<li><span>Web Development</span><br>front end(HTML,CSS)</li>
+<li><span>Soft skills</span><br>Communication,team work,time management</li>
+</ul>
+</div>
+<div class="tab-contents" id="experience">
+    <ul>
+        <li><span>2024</span><br>Fresher</li>
+        </ul>
+        </div>
+        <div class="tab-contents" id="education">
+        <ul>
+        <li><span>College</span><br> currently pursuing a third-year B.Tech in Information Technology at MSAJCE </li>
+        <li><span>School</span><br>I completed my schooling at Infant jesus matric.hr.sec.school</li>
+        </ul>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        <!-- ---------achivements---------------- -->
+        <div id="achivements">
+        <div class="container">
+        <h1 class="sub-title">My Achivements</h1>
+        <div class="services-list">
+        <div>
+        <i class="fas fa-code"></i>
+        <h2>UI/UX Design</h2>
+        <p>Completed a UI/UX design workshop, gaining skills in user interface and user experience design.</p>
+        <a href="#">Learn more</a>
+        </div>
+        <div>
+        <i class="fas fa-crop-alt"></i>
+        <h2>App Development</h2>
+        <p> Completed a basic app development workshop, learning the fundamentals of creating functional mobile applications.</p>
+        <a href="#">Learn more</a>
+        </div>
+        <div>
+        <i class="fab fa-app-store"></i>
+        <h2>HTML</h2>
+        <p>Completed a introduction of HTML Course in sololearn app</p>
+        <a href="#">Learn more</a>
+        </div>
+        </div>
+        </div>
+        </div>
+        <!-- ----------portfolio------------ -->
+        <div id="portfolio">
+        <div class="container">
+        <h1 class="sub-title">My certificates</h1>
+        <div class="certificate-list">
+        <div class="certificates">
+        <img src="html.jpg"> 
+        <div class="layer">
+        <h3>Social Media App</h3>
+        <p>The app connects you yo the talented people around the world. Download it 
+        from play store.</p>
+        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+        </div>
+        </div>
+        <div class="certificate">
+        <img src="uiux.jpg">
+        <div class="layer">
+        <h3>Music App</h3>
+        <p>The app connects you yo the talented people around the world. Download it 
+        from play store.</p>
+        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+        </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+        </div>
+        </div>
+        <!-- ----------contact------------- -->
+        <div id="contact">
+        <div class="container">
+        <div class="row">
+        <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fas fa-paper-plane"></i> contact@example.com</p>
+        <p><i class="fas fa-phone-square-alt"></i> 0123456789</p>
+        <div class="social-icons">
+        <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+        <a href=""><i class="fab fa-twitter-square"></i></a>
+        <a href=""><i class="fab fa-instagram"></i></a>
+        <a href=""><i class="fab fa-linkedin"></i></a>
+        </div>
+        <a href="resume.jpg" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+        <form name="submit-to-google-sheet">
+        <input type="text" name="Name" placeholder="Your Name" required>
+        <input type="email" name="Email" placeholder="Your Email" required>
+        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+        <button type="submit" class="btn btn2">Submit</button>
+        </form>
+        <span id="msg"></span>
+        </div>
+        </div>
+        </div>
+        <div class="copyright">
+        <p>Copyright © User. Made wtih <i class="fas fa-heart"></i> by <a 
+        href="https://www.youtube.com/channel/UCkjoHfkLEy7ZT4bA2myJ8xA?sub_confirmation=1"
+        >Trainning</a></p>
+        </div>
+        </div>
+        <script src="script.js"></script>
+        </body>
+        </html>        
